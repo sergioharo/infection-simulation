@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Infection</title>
+	<meta name="author" content="Sergio Haro">
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="colmask">
+		<div class="colleft">
+			<div class="col1 canvas"></div>
+			<div class="col2">
+				<div class="section">
+				    <h3>Run</h3>
+				    <div>
+				        <h1>Week: <span id="timestamp">0</span></h1>
+    				    <a id="startBtn">Run!</a>
+    				</div>
+				</div>
+				<div class="section">
+				    <h3>Options</h3>
+				    <div>
+				        <table border=0>
+				            <tr>
+				                <td>
+				                    <label for="infectionType">Infection Type:</label>
+				                </td>
+				                <td>
+				                    <input type="radio" group="infectionType" name="infectionType" value="0" checked />
+                					<span>Re-infectable</span><br />
+                					<input type="radio" group="infectionType" name="infectionType" value="1" />
+                					<span>Non-infectable</span>
+				                </td>
+				            </tr>
+    					</table>
+					</div>
+				</div>
+				<div class="section">
+				    <h3>Legend</h3>
+				    <table border="0" class="legend">
+			            <tr>
+			                <td><div class="circle"></div></td>
+			                <td>Normal</td>
+			            </tr>
+			            
+			            <tr>
+			                <td><div class="circle immunized"></div></td>
+			                <td>Immunized</td>
+			            </tr>
+			            
+			            <tr>
+			                <td><div class="circle infected"></div></td>
+			                <td>Infected</td>
+			            </tr>
+			            
+			            <tr>
+			                <td><div class="circle noninfectable"></div></td>
+			                <td>Recovered and not re-infectable</td>
+			            </tr>
+			        </table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src=" http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+	<script src="infection.js"></script>
+</body>
+</html>
