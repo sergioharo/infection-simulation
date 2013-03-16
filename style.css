@@ -113,11 +113,11 @@ table.legend td {
 	-o-transition: background-color 500ms; /* Opera */
 }
 .infected {
-	background-color: #C44D58;
+	background-color: #C44D58 !important;
 }
 .immunized {
-	background-color: #FFD843;
+	background-color: #FFD843 !important;
 }
 .noninfectable {
-	background-color: #556270;
+	background-color: #556270 !important;
 }
